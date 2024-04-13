@@ -6,9 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>DJANGO APPLICATION - HASMATH </h1>
-    {{name}}
-    {{numbers}}
-    {{marks}}
+    <h1>Django application - Hasmath </h1>
+
+    <!-- if statement -->
+    {% if role == "admin" %}
+        <h1>Welcome {{name}}</h1>
+    {% else %}
+        <h1>Welcome Guest</h1>
+    {% endif %}
+
+    <!-- for loop -->
+
+    {% for num in numbers %}
+         <p>The number is {{num}}</p>
+    
+    {% endfor %}
+
+   
 </body>
 </html>

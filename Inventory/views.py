@@ -4,6 +4,7 @@ def HomePage(request):
 
     data = {
         "name": "Hasmath",
+        "role": "manager",
         "numbers" : [1,2,3,4,5,6],
         "marks" : {
             "tamil" : "100",
