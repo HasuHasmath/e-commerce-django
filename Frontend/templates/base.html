@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ecommerce App</title>
-   {% load bootstrap5 %}
-   {% bootstrap_css %}
-   {% bootstrap_javascript %}
+    <title>Document</title>
+    {% load bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -41,22 +39,5 @@
         </div>
       </div>
     </nav>
-    <h1>Django application - Hasmath</h1>
-
-    <!-- if statement -->
-    {% if role == "admin" %}
-    <h1>Welcome {{name}}</h1>
-    {% else %}
-    <h1>Welcome Guest</h1>
-    {% endif %}
-
-    <!-- for loop -->
-
-    {% for num in numbers %}
-    <p>The number is {{num}}</p>
-
-    {% endfor %}
-
-    
   </body>
 </html>
