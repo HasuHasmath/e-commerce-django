@@ -1,29 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ecommerce App</title>
+{% extends 'base.html' %} 
 
-  </head>
-  <body>
-   
-    <h1>Django application - Hasmath</h1>
+{% block content %}
 
-    <!-- if statement -->
-    {% if role == "admin" %}
-    <h1>Welcome {{name}}</h1>
-    {% else %}
-    <h1>Welcome Guest</h1>
-    {% endif %}
+  <h1>Django application - Hasmath</h1>
 
-    <!-- for loop -->
+  {% if role == "admin" %}
+  <h1>Welcome {{name}}</h1>
+  {% else %}
+  <h1>Welcome Guest</h1>
+  {% endif %}
 
-    {% for num in numbers %}
-    <p>The number is {{num}}</p>
+  {% for num in numbers %}
+  <p>The number is {{num}}</p>
 
-    {% endfor %}
-
-    
-  </body>
-</html>
+{% endfor %} 
+{% endblock %}
